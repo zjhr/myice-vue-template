@@ -1,0 +1,27 @@
+.s_clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+.s_middle{
+	.s_middle_child{
+		display:inline-block;
+		vertical-align: middle;
+	}
+	&:after{
+		content:"";
+		height: 100%;
+		@extend .s_middle_child;
+	}
+}
+// .fa-icon{
+// 	width: auto;
+// 	/* 要在 Safari 中正常工作，需要再引入如下两行代码 */
+//   max-width: 100%;
+//   max-height: 100%;
+// }

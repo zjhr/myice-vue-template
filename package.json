@@ -1,0 +1,73 @@
+{
+  "name": "@vue-materials/admin-lite",
+  "version": "1.0.0",
+  "description": "自用后台管理系统基础模板",
+  "homepage": "https://alibaba.github.io/ice/scaffold-preview/admin-lite.html",
+  "author": "604068311@qq.com",
+  "scripts": {
+    "start": "vue-cli-service serve --mode development",
+    "build": "vue-cli-service build --mode development",
+    "dev": "vue-cli-service serve --mode development --open",
+    "stag": "vue-cli-service serve --mode staging",
+    "prod": "vue-cli-service serve --mode production",
+    "dev-build": "vue-cli-service build --mode development",
+    "stag-build": "vue-cli-service build --mode staging",
+    "prod-build": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vue-materials/basic-container": "^1.0.0",
+    "axios": "^0.18.0",
+    "element-ui": "^2.4.6",
+    "normalize.css": "^8.0.0",
+    "vue": "^2.5.16",
+    "vue-awesome": "^3.1.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.54",
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.54",
+    "@babel/plugin-proposal-decorators": "7.0.0-beta.54",
+    "@babel/plugin-proposal-export-namespace-from": "7.0.0-beta.54",
+    "@babel/plugin-proposal-function-sent": "7.0.0-beta.54",
+    "@babel/plugin-proposal-json-strings": "7.0.0-beta.54",
+    "@babel/plugin-proposal-numeric-separator": "7.0.0-beta.54",
+    "@babel/plugin-proposal-throw-expressions": "7.0.0-beta.54",
+    "@babel/plugin-syntax-dynamic-import": "7.0.0-beta.54",
+    "@babel/plugin-syntax-import-meta": "7.0.0-beta.54",
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-plugin-eslint": "^3.0.0",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-airbnb": "^3.0.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba/ice"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ice",
+    "ice-scaffold"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://registry.npmjs.com"
+  },
+  "browserslist": [
+    "cover 99.5%",
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "scaffoldConfig": {
+    "name": "admin-lite",
+    "title": "Admin Lite",
+    "screenshot": "https://img.alicdn.com/tfs/TB1SqrjontYBeNjy1XdXXXXyVXa-2842-1596.png"
+  },
+  "title": "后台管理系统"
+}
