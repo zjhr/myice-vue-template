@@ -6,7 +6,7 @@
   "author": "604068311@qq.com",
   "scripts": {
     "start": "vue-cli-service serve --mode development",
-    "build": "vue-cli-service build --mode development",
+    "build": "vue-cli-service build --mode production",
     "dev": "vue-cli-service serve --mode development --open",
     "stag": "vue-cli-service serve --mode staging",
     "prod": "vue-cli-service serve --mode production",
