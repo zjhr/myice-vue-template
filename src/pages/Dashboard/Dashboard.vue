@@ -13,5 +13,11 @@
 		components: {
 			DataDisplay
 		},
+		mounted () {
+			this.$axios.get('/packlist')
+			.then((res)=>{
+				console.log(res)
+			})
+		}
 	}
 </script>
