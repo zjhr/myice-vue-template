@@ -18,8 +18,8 @@ Vue.use(ElementUI);
 
 Vue.config.productionTip = false;
 
-Vue.prototype.$env = process.env.NODE_ENV
-Vue.prototype.$baseUrl = process.env.BASE_URL
+// Vue.prototype.$env = process.env.NODE_ENV
+// Vue.prototype.$baseUrl = process.env.BASE_URL
 
 new Vue({
 	router,
