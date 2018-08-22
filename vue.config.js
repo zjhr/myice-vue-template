@@ -10,7 +10,7 @@ const baseUrl = "./";
 
 module.exports = {
 	baseUrl, // 根据你的实际情况更改这里
-	outputDir: process.env.NODE_ENV==="production"?"dist-prod":"dist-dev",
+	outputDir: process.env.NODE_ENV==="production"?"./dist-prod":"./dist-dev",
 	productionSourceMap: process.env.NODE_ENV!=="production",
 	lintOnSave: false,
 	configureWebpack: {
