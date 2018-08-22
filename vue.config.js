@@ -6,12 +6,12 @@ function resolve(dir) {
 }
 
 // 基础路径
-const baseUrl = process.env.VUE_APP_BASURL;
+const baseUrl = "./";
 
 module.exports = {
 	baseUrl, // 根据你的实际情况更改这里
-	outputDir: process.env.VUE_APP_OUTPUTDIR,
-	productionSourceMap: process.env.NODE_ENV !== "production",
+	outputDir: process.env.NODE_ENV==="production"?"dist-prod":"dist-dev",
+	productionSourceMap: process.env.NODE_ENV!=="production",
 	lintOnSave: false,
 	configureWebpack: {
 		resolve: {
@@ -34,7 +34,7 @@ module.exports = {
 	devServer: {
 		proxy: {
 			'/api': {
-				target: process.env.VUE_APP_API_ROOT, // 需要代理去的接口地址
+				target: "", // 需要代理去的接口地址
 				changeOrigin: true, // 跨域请求必须开启
 				secure: false, // 不要检查证书
 				pathRewrite: {
