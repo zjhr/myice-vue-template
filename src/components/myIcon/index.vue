@@ -5,7 +5,8 @@
 </template>
 
 <script>
-	import VueAwesome from 'vue-awesome';
+	import VueAwesome from 'vue-awesome/components/Icon';
+	import 'vue-awesome/icons/bars';
 	VueAwesome.register({
 	  myicon: {
 		width: 25,
