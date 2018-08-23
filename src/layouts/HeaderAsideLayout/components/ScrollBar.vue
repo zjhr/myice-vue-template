@@ -11,18 +11,15 @@ const delta = 15;
 
 export default {
   name: "ScrollBar",
-  props: {
-    top: {
-      type: Number,
-      default: 0
-    }
-  },
   data() {
     return {
-      
-    };
+      top:0
+    }
   },
   methods: {
+    upFun(){
+      this.top=0;
+    },
     handleScroll(e) {
       const eventDelta = e.wheelDelta || -e.deltaY * 3;
       const $container = this.$refs.scrollContainer;

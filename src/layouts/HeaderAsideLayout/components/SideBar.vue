@@ -1,5 +1,5 @@
 <template>
-	<scroll-bar :class="{scroll_bar_close:isCollapse}" :top="0">
+	<scroll-bar :class="{scroll_bar_close:isCollapse}">
 		<div class="logo">
 			<img src="https://img.alicdn.com/tfs/TB13UQpnYGYBuNjy0FoXXciBFXa-242-134.png" width="40">
 			<span class="site-name scroll_bar_close_hide">ADMIN LITE</span>
@@ -65,6 +65,13 @@
 			opActive(){
 				return (path)=>{
 					return this.$route.path.includes(path)
+				}
+			}
+		},
+		watch: {
+			isCollapse(nv,ov){
+				if(nv){
+					this.$children[0].upFun()
 				}
 			}
 		}
